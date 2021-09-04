@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: helvetica,sans-serif,arial;
+}
+
+.main-box{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+	padding:10px 25px;
+}
+
+.main-box .pricing-cont{
+	width:100%;
+	padding:15px 25px;
+	margin-bottom:15px;
+}
+
+.main-box .pricing-cont:last-child{
+	border-bottom:none;
+}
+
+#header-cont{
+	text-align:center;
+	margin:0 auto;
+	padding-bottom:1px;
+}
+#header-cont .pricing-stm{
+	margin:5px 0;
+}
+
+.pricing-cont .pricing-price-cont{
+	display:flex;
+	align-items: center;
+	margin-bottom:25px;
+}
+
+.pricing-cont .pricing-name{
+	margin:15px 0;
+	font-size:1em;
+	font-weight:550;
+	color:#181955;
+}
+
+.pricing-cont  .pricing-price{
+	font-size:1.8em;
+	font-weight:600;
+	margin-right:5px;
+	color:#181955;
+}
+
+p{
+	font-size:1em;
+	line-height:1.5;
+}
+
+.pricing-cont .pricing-price-cont .pricing-paymethod{
+	font-size:1em;
+}
+
+.pricing-stm, .pricing-features, .pricing-features-item{
+	margin:20px 0;
+	color:#6a6a6e;
+}
+
+.pricing-features-item{
+	display:flex;
+	margin:10px;
+}
+
+.pricing-features-item .checked{
+	width:15px;
+	height:15px;
+	margin-right:10px;
+	text-align:center;
+}
+
+.pricing-features-item .pricing-features-item-des{
+	font-weight: 550;
+	font-size:.95em;
+}
+
+.pricing-button{
+	display:block;
+	text-align:center;
+	width:100%;
+	color:#5f30e2;
+	text-decoration:none;
+	border:1.5px solid #5f30e2;
+	border-radius:1em;
+	padding:15px 0;
+	font-weight:550;
+}
+
+#pricing-popular-cont{
+	background-color:#5f30e2;
+	border-radius:10px;
+}
+
+#pricing-popular-cont .pricing-name, #pricing-popular-cont .pricing-price,#pricing-popular-cont .pricing-stm,#pricing-popular-cont .pricing-features,#pricing-popular-cont .pricing-features-item,#pricing-popular-cont .pricing-paymethod{
+	color:white;
+}
+
+#pricing-popular-cont .pricing-button{
+	background-color:white;
+}
+
+@media only screen and (min-width: 750px){
+	.main-box .pricing-cont{
+		width:47%;
+		border: 1px solid #5f30e2;
+		border-radius: 10px;
+	}
+
+	#header-cont{
+		border:none;
+		width:100%;
+		margin-bottom:20px;
+	}
+
+	.main-box{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.main-box .pricing-cont{
+		width:23%;
+		border: 1px solid #5f30e2;
+		border-radius: 10px;
+	}
+
+	#header-cont{
+		width:100%;
+		border:none;
+	}
+
+	.main-box .pricing-cont:last-child{
+		border-bottom:1px solid #5f30e2;
+	}
+
+	.main-box{
+		height:100vh;
+		align-items: center;
+		justify-content: center;
+		justify-content: space-evenly;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding:none;
+		margin:none;
+	}
+}
