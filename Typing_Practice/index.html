@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Main">
+        <button id="startButton">Start Game</button>
+
+        <div id="game-results">
+            
+        </div>
+
+        <div id="game-cont">
+            <div id="char">
+                <div id="char-cont">
+                    <h3 class="char-child" id="typedChar"></h3>
+                    <h3 class="char-child" id='currentChar'></h3>
+                    <h3 class="char-child" id="incomingChar"></h3>
+                </div>
+                <div id="arrow-cont">
+                    <img src="img/Asset 1.png" id="imgs" alt="">
+                </div>
+            </div>
+            
+            <div id="scores">
+                <div class="score-cont">
+                    <h3 class="score-value" id="score-timer">0</h3>
+                    <hr>
+                    <h3 class="score-label">Time</h3>
+                </div>
+
+                <div class="score-cont">
+                    <h3 class="score-value" id="word-min">0</h3>
+                    <hr>
+                    <h3 class="score-label">Words / Min</h3>
+                </div>
+
+                <div class="score-cont">
+                    <h3 class="score-value">0</h3>
+                    <hr>
+                    <h3 class="score-label">Time</h3>
+                </div>
+
+                <div class="score-cont">
+                    <h3 class="score-value" id="typed-error">0</h3>
+                    <hr>
+                    <h3 class="score-label">Error</h3>
+                </div>
+
+                <div class="score-cont">
+                    <h3 class="score-value" id="last-key">0</h3>
+                    <hr>
+                    <h3 class="score-label">Last key</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
