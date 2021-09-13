@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    font-family: helvetica,sans-serif,arial;
+}
+
+.main{
+    margin-top:25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100vw;
+    min-width: 800px;
+}
+
+.word-container{
+    width: 700px;
+    height:73px;
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+    position:relative;
+    padding:3px 2px;
+    overflow: hidden;
+}
+
+#user-input{
+    margin-bottom: 20px;
+}
+
+.result{
+    border-radius: 4px;
+    background-color: white;
+    width:300px;
+}
+
+.result p{
+    padding:5px 4px;
+    margin:0;
+    border-radius: 4px 4px 0 0;
+    color:white;
+    background:linear-gradient(#428bca,#326da0);
+    width:100%;
+    border-bottom:2px solid rgb(204, 201, 201, 0.7);
+}
+
+.main #user-input{
+    height:45px;
+    padding:4px 0;
+    width: 700px;
+    border: none;
+    background-color: #a7c8e7;
+    opacity: .9;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#reset-button, #inputs, #timer{
+    font-size: 27px;
+    margin: 0 5px;
+}
+
+#timer{
+    width:70px;
+    text-align: center;
+    margin:0 5px;
+    background-color: #3c4d5c;
+    color:white;
+    font-size: 18px;
+    height:100%;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+#reset-button{
+    background-color: #428bca;
+    color:white;
+    height:100%;
+    border-radius: 2px;
+    border:1px solid #2f82ca;
+}
+
+#reset-button:hover{
+    background-color:#428bca;
+    opacity:.8;
+}
+
+.sentence{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position:absolute;
+    width: 100%;
+}
+
+.sentence span{
+    font-size: 26px;
+    margin:0px 4px;
+    margin-bottom: 2px;
+}
+
+.res-current{
+    border-radius: 3px;
+    background-color: rgb(235, 233, 233);
+}
+
+.res-danger{
+    background-color: rgb(250, 52, 52);
+}
+
+.res-wrong{
+    background-color: transparent;
+    color: rgb(253, 72, 17);
+}
+
+.res-correct{
+    background-color: transparent;
+    color: green;
+}
+
+
