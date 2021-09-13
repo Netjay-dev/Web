@@ -30,8 +30,10 @@ const game = {
         this.totalWidth = 0;
     },
     showScores(){
-        console.log(Math.floor(this.chars/5), 'words per minute');
-        console.log('With Accuracy of', Math.floor(((this.chars - this.error) / this.chars) * 100));
+        document.querySelector('#keystrokes .res-correct').innerText = this.keystrokes;
+        document.querySelector('#keystrokes .res-wrong').innerText = this.error;
+        document.querySelector('.result .result-header h1').innerText = `${Math.floor(this.chars/5)} WPM`;
+        document.querySelector('#accuracy').innerText = Math.floor(((this.chars - this.error) / this.chars) * 100);
     }
 }
 
