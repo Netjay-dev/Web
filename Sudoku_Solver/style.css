@@ -2,7 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    font-family: 'Nunito', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 .sudoku{
     display: flex;
@@ -48,4 +51,10 @@
 
 .wrapper .row .tile:first-child{
     border-left: 2px solid rgb(179, 179, 179);
+}
+
+button{
+    margin-top: 20px;
+    padding : 2px 12px;
+    font-size: 20px;
 }
